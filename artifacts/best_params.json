@@ -1,0 +1,12 @@
+{
+  "best_params": {
+    "learning_rate": 0.0187503345478463,
+    "num_leaves": 60,
+    "max_depth": 5,
+    "min_child_samples": 89,
+    "colsample_bytree": 0.6935306560566942,
+    "reg_alpha": 0.16467049952673635,
+    "reg_lambda": 8.901811352419909e-07
+  },
+  "best_auc": 0.7403311903911473
+}

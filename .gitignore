@@ -1,0 +1,10 @@
+.envrc
+.venv
+data/**
+data/raw/*
+!data/raw/.gitkeep
+deploy
+*.pdf
+*.zip
+__pycache__
+!docs/*.pdf
