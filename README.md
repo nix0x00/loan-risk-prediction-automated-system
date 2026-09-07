@@ -8,8 +8,8 @@ a new model only when it demonstrably beats the one in production.
 
 ```
 .
-├── main.ipynb                  Part 1 — analysis notebook (EDA → target → features → model)
-├── main.py                     Part 3 — pipeline entrypoint, runs end-to-end
+├── main.ipynb                  analysis notebook (EDA → target → features → model)
+├── main.py                     pipeline entrypoint, runs end-to-end
 ├── src/
 │   ├── ingestion.py            IngestData — locates and loads the three parquet sources,
 │   │                           fails the run if any file is missing
@@ -34,7 +34,7 @@ a new model only when it demonstrably beats the one in production.
 └── pyproject.toml / uv.lock    pinned environment
 ```
 
-## `main.html / main.ipynb` — Part 1
+## `main.html / main.ipynb`
 
 The analysis and the reasoning behind the model. Runs in order:
 
@@ -47,12 +47,12 @@ The analysis and the reasoning behind the model. Runs in order:
 5. **Model** — LightGBM with a time-based split, evaluated on AUC, Gini, KS.
 6. **Limitations** — selection bias, right-censoring, and unused signal.
 
-## `docs/XYZ-Corp.pdf` — Part 2
+## `docs/XYZ-Corp.pdf`
 The architecture diagram and design rationale.
 
 
 
-## `main.py` — Part 3
+## `main.py`
 
 The same steps as the notebook, but as a repeatable pipeline. One run does:
 
